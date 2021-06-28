@@ -1,16 +1,44 @@
-div[class*="col"] {
-    height: 200px;
-    border: 2px solid black;
+.bg-firstcolor {
+    background-color: #2C3E50;
+}
+h1 {
+    font-size: 55px;
+}
+.text-25 {
+    font-size: 25px;
 }
 
-header,
-#copyright {
-    background-color: #2C3E50;
+#logo-header {
+    font-weight: 700;
+}
+#navbarNav {
+    font-weight: 500;
 }
 
 #hero,
 #about {
     background-color: #1ABC9C;
+}
+#hero .avatar {
+    width: 220px;
+}
+#hero .fa-star {
+    font-size: 28px;
+    vertical-align: middle;
+}
+#hero .divider::before {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    background-color: white;
+}
+#hero .divider::after {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    background-color: white;
 }
 
 footer {
