@@ -1,11 +1,61 @@
 .bg-firstcolor {
     background-color: #2C3E50;
 }
-h1 {
-    font-size: 55px;
+.bg-aqua {
+    background-color: #1ABC9C;
 }
-.text-25 {
-    font-size: 25px;
+.btn.bg-aqua {
+    color: white;
+}
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    font-size: 3em;
+}
+.text-standard {
+    font-size: 1.5em;
+}
+.text-small {
+    font-size: 1.2em;
+}
+.text-darkgrey {
+    color: #333333;
+}
+.text-blue {
+    color: #2C3E50;
+}
+.star {
+    font-size: 28px;
+    vertical-align: middle;
+}
+.star-divider::before {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 3px;
+}
+.star-divider::after {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 3px;
+}
+.white.star-divider::after,
+.white.star-divider::before {
+    background-color: white;
+}
+.blue.star-divider::after,
+.blue.star-divider::before {
+    background-color: #2C3E50;
+}
+.link {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+.link:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 #logo-header {
@@ -15,32 +65,58 @@ h1 {
     font-weight: 500;
 }
 
-#hero,
-#about {
-    background-color: #1ABC9C;
-}
 #hero .avatar {
     width: 220px;
 }
-#hero .fa-star {
-    font-size: 28px;
-    vertical-align: middle;
-}
-#hero .divider::before {
-    content: "";
-    display: inline-block;
-    width: 150px;
-    height: 3px;
-    background-color: white;
-}
-#hero .divider::after {
-    content: "";
-    display: inline-block;
-    width: 150px;
-    height: 3px;
-    background-color: white;
+
+#portfolio img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-footer {
+#bottom-info {
     background-color: #3A546D;
 }
+footer a {
+    text-decoration: none;
+}
+footer .social-button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    border: 1px solid white;
+    color: white;
+}
+
+#contact-me input,
+#contact-me textarea {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .text-standard {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .text-standard {
+        font-size: .9em;
+    }
+}
+
